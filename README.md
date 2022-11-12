@@ -58,8 +58,19 @@ Melissa Weston-Puett
 
 ## Data Source and Preprocessing
 
-The data for this project was retrieved from Data.gov (Insert link) and was published by The City of Chicago. There were # crimes reported and includes information about X. Data were filtered or dropped during the preprocessing using the following criteria:
+The data for this project was retrieved from Data.gov (Insert link) and was published by The City of Chicago. There were # crimes reported and includes information about X. Data were filtered or dropped during the preprocessing with Pandas using the following criteria:
 
 1. Data were filtered by date to include years 2010 and forward.
-2. 
+2. Rows including NaNs and empty cells were deleted.
+3. Dropped Case Number column
+4. 
 
+## Database
+
+## Machine Learning Model
+
+## Results
+
+## Tableau Interactive Dashboard
+
+## Summary
