@@ -4,7 +4,7 @@
 As we are still getting things figured out for our project, these requirements will probably be specific to week 1. Expect a more consistent schedule to be built later.
 
 * Team will meet every Monday and Wednesday at normal class time.
-* Team will determine before ending each Zoom session when all members are able to meet via Zoom.
+* Team will determine before ending each Zoom session when all members are able to meet outside of class times via Zoom.
 
 ## Deliverable 1 Requirements:
 ### General Requirements
@@ -50,15 +50,15 @@ Several members of the team expressed an interested in researching in the broad 
 
 ## Team Members
 
-Randy Melancon
-Matthew Parrish
-Jarod Peters
-Andres Rosas
-Melissa Weston-Puett
+Randy Melancon [branch](link)\
+Matthew Parrish [branch](https://github.com/profweston/Crime_Time_Final_Project/tree/mparrish)\
+Jarod Peters [branch](https://github.com/profweston/Crime_Time_Final_Project/tree/jarodpeters)\
+Andres Rosas [branch](https://github.com/profweston/Crime_Time_Final_Project/tree/andres)\
+Melissa Weston-Puett [branch](https://github.com/profweston/Crime_Time_Final_Project/tree/mels-branch)
 
 ## Data Source and Preprocessing
 
-The data for this project was retrieved from Data.gov (Insert link) and was published by The City of Chicago. There were # crimes reported and includes information about X. Data were filtered or dropped during the preprocessing with Pandas using the following criteria:
+The data for this project was retrieved from Data.gov and was published by The City of Chicago. There were # crimes reported and includes information about X. Data were filtered or dropped during the preprocessing with Pandas using the following criteria:
 
 1. Data were filtered by date to include years 2010 and forward.
 2. Rows including NaNs and empty cells were deleted.
