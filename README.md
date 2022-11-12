@@ -60,9 +60,9 @@ Melissa Weston-Puett [branch](https://github.com/profweston/Crime_Time_Final_Pro
 
 The data for this project was retrieved from Data.gov and was published by The City of Chicago. There were # crimes reported and includes information about X. Data were filtered or dropped during the preprocessing with Pandas using the following criteria:
 
-1. Data were filtered by date to include years 2010 and forward.
+1. Data were filtered by date to include years 2015 and forward.
 2. Rows including NaNs and empty cells were deleted.
-3. Dropped Case Number column
+3.
 4. 
 
 ## Database
