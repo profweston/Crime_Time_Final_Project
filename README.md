@@ -48,4 +48,18 @@ The City of Chicago has a long history of crime. The overall crime rate is highe
 
 Several members of the team expressed an interested in researching in the broad area of crime. We discussed several options for locations and eventually settled on Chicago. When looking at the data file, we observed that there are many crimes reported that result in no arrests. Thus, we decided to try to build a machine learning model that can be used to predict arrest rate based on location, time, and/or type of crime committed.
 
+## Team Members
+
+Randy Melancon
+Matthew Parrish
+Jarod Peters
+Andres Rosas
+Melissa Weston-Puett
+
+## Data Source and Preprocessing
+
+The data for this project was retrieved from Data.gov (Insert link) and was published by The City of Chicago. There were # crimes reported and includes information about X. Data were filtered or dropped during the preprocessing using the following criteria:
+
+1. Data were filtered by date to include years 2010 and forward.
+2. 
 
