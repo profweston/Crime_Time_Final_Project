@@ -50,7 +50,7 @@ Several members of the team expressed an interested in researching in the broad 
 
 ## Team Members
 
-Randy Melancon [branch](link)\
+Randy Melancon [branch](https://github.com/profweston/Crime_Time_Final_Project/tree/randys-branch)
 Matthew Parrish [branch](https://github.com/profweston/Crime_Time_Final_Project/tree/mparrish)\
 Jarod Peters [branch](https://github.com/profweston/Crime_Time_Final_Project/tree/jarodpeters)\
 Andres Rosas [branch](https://github.com/profweston/Crime_Time_Final_Project/tree/andres)\
