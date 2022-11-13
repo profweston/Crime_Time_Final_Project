@@ -5,14 +5,15 @@ As we are still getting things figured out for our project, these requirements w
 
 * Team will meet every Monday and Wednesday at normal class time.
 * Team will determine before ending each Zoom session when all members are able to meet outside of class times via Zoom.
+* Team will use group slack channel to continually update each other as to status or ask questions of each other when stuck.
 
 ## Deliverable 1 Requirements:
 ### General Requirements
 Team members have drafted their project, including the following:
 
 - [X] Selected topic
-- [ ] Reason why they selected their topic 
-- [ ] Description of their source of data
+- [X] Reason why they selected their topic 
+- [X] Description of their source of data
 - [X] Questions they hope to answer with the data
 
 ---
@@ -22,7 +23,7 @@ Main Branch
 - [X] Includes a README.md
 
 README.md must include:
-- [ ] Description of the communication protocols
+- [X] Description of the communication protocols
 - [X] At least one branch for each team member
 - [ ] Each team member has at least four commits from the duration of the first segment
 
@@ -50,7 +51,7 @@ Several members of the team expressed an interested in researching in the broad 
 
 ## Team Members
 
-Randy Melancon [branch](link)\
+Randy Melancon [branch](https://github.com/profweston/Crime_Time_Final_Project/tree/randys-branch)\
 Matthew Parrish [branch](https://github.com/profweston/Crime_Time_Final_Project/tree/mparrish)\
 Jarod Peters [branch](https://github.com/profweston/Crime_Time_Final_Project/tree/jarodpeters)\
 Andres Rosas [branch](https://github.com/profweston/Crime_Time_Final_Project/tree/andres)\
@@ -68,9 +69,14 @@ The data for this project was retrieved from Data.gov and was published by The C
 ## Database
 
 ## Machine Learning Model
+Our provision Machine Learning Model is the Random Forest Classifier. We chose a supervised learning model because we are attempting to predict arrests based on data from previous arrests. Since our target variable only has two possible values (True or False), it is a classification model. The Random Forest Classifier is beneficial because it is robust against overfitting, can handle many input variables without variable deletion, and can run efficientily on our large dataset.
+
+
 
 ## Results
 
 ## Tableau Interactive Dashboard
 
 ## Summary
+
+Google slide link:
