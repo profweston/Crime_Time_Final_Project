@@ -5,6 +5,7 @@ As we are still getting things figured out for our project, these requirements w
 
 * Team will meet every Monday and Wednesday at normal class time.
 * Team will determine before ending each Zoom session when all members are able to meet outside of class times via Zoom.
+* Team will use group slack channel to continually update each other as to status or ask questions of each other when stuck.
 
 ## Deliverable 1 Requirements:
 ### General Requirements
@@ -68,7 +69,9 @@ The data for this project was retrieved from Data.gov and was published by The C
 ## Database
 
 ## Machine Learning Model
-Random Forest Classifier (Provisional)
+Our provision Machine Learning Model is the Random Forest Classifier. We chose a supervised learning model because we are attempting to predict arrests based on data from previous arrests. Since our target variable only has two possible values (True or False), it is a classification model. The Random Forest Classifier is beneficial because it is robust against overfitting, can handle many input variables without variable deletion, and can run efficientily on our large dataset.
+
+
 
 ## Results
 
