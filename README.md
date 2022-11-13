@@ -11,8 +11,8 @@ As we are still getting things figured out for our project, these requirements w
 Team members have drafted their project, including the following:
 
 - [X] Selected topic
-- [ ] Reason why they selected their topic 
-- [ ] Description of their source of data
+- [X] Reason why they selected their topic 
+- [X] Description of their source of data
 - [X] Questions they hope to answer with the data
 
 ---
@@ -22,7 +22,7 @@ Main Branch
 - [X] Includes a README.md
 
 README.md must include:
-- [ ] Description of the communication protocols
+- [X] Description of the communication protocols
 - [X] At least one branch for each team member
 - [ ] Each team member has at least four commits from the duration of the first segment
 
@@ -68,9 +68,12 @@ The data for this project was retrieved from Data.gov and was published by The C
 ## Database
 
 ## Machine Learning Model
+Random Forest Classifier (Provisional)
 
 ## Results
 
 ## Tableau Interactive Dashboard
 
 ## Summary
+
+Google slide link:
