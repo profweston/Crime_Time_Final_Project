@@ -1,3 +1,39 @@
+# Deliverable 1 Requirements:
+## General Requirements
+Team members have drafted their project, including the following:
+
+- [X] Selected topic
+- [X] Reason why they selected their topic 
+- [X] Description of their source of data
+- [X] Questions they hope to answer with the data
+
+---
+
+## GitHub Requirements:
+Main Branch
+- [X] Includes a README.md
+
+README.md must include:
+- [X] Description of the communication protocols
+- [X] At least one branch for each team member
+- [X] Each team member has at least four commits from the duration of the first segment
+
+**Note**: The descriptions and explanations required in all other project deliverables should also be in your README.md as part of your outline, unless otherwise noted.
+
+--- 
+
+## Machine Learning Model Requirements:
+- [X] Takes in data in from the provisional database
+- [X] Outputs label(s) for input data
+
+---
+
+## Database Requirements:
+- [X] Sample data that mimics the expected final database structure or schema
+- [X] Draft machine learning module is connected to the provisional database
+
+
+# Week 2 Requirements
 ## Presentation:
 - [ ] Description of the data exploration phase of the project
 - [ ] Description of the analysis phase of the project
@@ -13,11 +49,11 @@ The main branch should include:
 
 **README.md
 README.md must include:
-- [ ] Description of the communication protocols
+- [X] Description of the communication protocols
 - [ ] Outline of the project (this may include images, but should be easy to follow and digest)
 Note: The descriptions and explanations required in all other project deliverables should also be in your README.md as part of your outline, unless otherwise noted.
 Individual Branches
-- [ ] At least one branch for each team member 
+- [X] At least one branch for each team member 
 - [ ] Each team member has at least four commits for the duration of the second segment (eight total commits per person)
 
 ## Machine Learning Model:
