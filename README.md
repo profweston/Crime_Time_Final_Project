@@ -1,7 +1,7 @@
 
 ## Project Overview
 
-The City of Chicago has a long history of crime. The overall crime rate is higher than that of the national average. In fact, the chance of becoming a victim of either a violent crime or property crime in Chicago is 1 in 28 [(Reference)](https://www.neighborhoodscout.com/il/chicago/crime#description).  Unfortunately, many crimes reported do not result in an arrest. This project examines crime data reported in the city of Chicago from 2010 to present to determine if an arrest for a crime can be predicted based on location, time, and crime perpetrated.
+The City of Chicago has a long history of crime. The overall crime rate is higher than that of the national average. In fact, the chance of becoming a victim of either a violent crime or property crime in Chicago is 1 in 28 [(Reference)](https://www.neighborhoodscout.com/il/chicago/crime#description).  Unfortunately, many crimes reported do not result in an arrest. This project examines crime data reported in the city of Chicago from 2015 to present to determine if an arrest for a crime can be predicted based on location, time, and crime perpetrated.
 
 Google slide link: [Slides](https://docs.google.com/presentation/d/1DseX3fkHr9eO4vOe5xpPTRBj4CqlGOkHm0cAmxP43Nk/edit?usp=share_link)
 
@@ -11,8 +11,10 @@ Several members of the team expressed an interested in researching in the broad 
 
 ## Questions
 
-1. Can a machine learning model be sued to predict arrest rate based on location, time and type of crime committed?
-2.
+1. Can a machine learning model be used to predict arrest rate based on location, time and type of crime committed?
+2. What are the most common crimes committed in Chicago?
+3. How does crime differ by districts?
+4. What time is more common for crimes to be committed?
 
 ## Team Members
 
@@ -24,7 +26,7 @@ Melissa Weston-Puett [branch](https://github.com/profweston/Crime_Time_Final_Pro
 
 ## Data Source and Preprocessing
 
-The data for this project was retrieved from Data.gov and was published by The City of Chicago.[Data Link](https://catalog.data.gov/dataset/crimes-2001-to-present). There were # crimes reported and includes information about X. Data were filtered or dropped during the preprocessing with Pandas using the following criteria:
+The data for this project were retrieved from Data.gov and was published by The City of Chicago.[Data Link](https://catalog.data.gov/dataset/crimes-2001-to-present). Data were filtered or dropped during the preprocessing with Pandas using the following criteria:
 
 1. Data were filtered by date to include years 2015 and forward.
 2. Rows including NaNs and empty cells were deleted.
