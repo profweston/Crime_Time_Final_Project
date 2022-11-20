@@ -52,12 +52,21 @@ Preliminary
 
 1. Results from the Machine Learning Model analysis (TBD)
 2. Most Common Types of Crime
-![Most Common Types of Crime](Resources/Bubble.png)
+
+![Most Common Types of Crime](/Resources/Bubble.png)
+
+3. Heat map filtered by district
+
+![Crime by District](/Resources/District.png)
 
 
-3. Heat map filtered by types of crime
-4. Arrest rate by type of crime (Area chart?)
-5. Histogram of crime by time bins
+4. Arrest rate by type of crime
+
+
+![Arrests rates](/Resources/Arrests.png)
+
+
+5. Histogram of crime by time bins (TBD)
 
 
 ## Results
