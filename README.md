@@ -3,7 +3,7 @@
 
 The City of Chicago has a long history of crime. The overall crime rate is higher than that of the national average. In fact, the chance of becoming a victim of either a violent crime or property crime in Chicago is 1 in 28 [(Reference)](https://www.neighborhoodscout.com/il/chicago/crime#description).  Unfortunately, many crimes reported do not result in an arrest. This project examines crime data reported in the city of Chicago from 2015 to present to determine if an arrest for a crime can be predicted based on location, time, and crime perpetrated.
 
-Google slide link: [Slides](https://docs.google.com/presentation/d/1DseX3fkHr9eO4vOe5xpPTRBj4CqlGOkHm0cAmxP43Nk/edit?usp=share_link)
+Google slide link: [Slides](https://docs.google.com/presentation/d/1aL27DWHeShtGu0Y2L8k9DK4RNyBFMVQTkkwG990Ahz0/edit?usp=sharing)
 
 ## Reason
 
