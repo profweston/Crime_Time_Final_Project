@@ -68,6 +68,8 @@ The data for this project was retrieved from Data.gov and was published by The C
 
 ## Database
 
+
+
 ## Machine Learning Model
 Our provisional Machine Learning Model is the Random Forest Classifier. We chose a supervised learning model because we are attempting to predict arrests based on data from previous arrests. Since our target variable only has two possible values (True or False), it is a classification model. The Random Forest Classifier is beneficial because it is robust against overfitting, can handle many input variables without variable deletion, and can run efficiently on our large dataset.
 
@@ -76,7 +78,13 @@ Our provisional Machine Learning Model is the Random Forest Classifier. We chose
 ## Results
 
 ## Tableau Interactive Dashboard
+1. Results from the Machine Learning Model analysis
+2. Heat map filtered by district
+3. Heat map filtered by types of crime
+4. Arrest rate by type of crime (Area chart?)
+5. Histogram of crime by time bins
+
 
 ## Summary
 
-Google slide link:
+Google slide link: 
