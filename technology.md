@@ -1,7 +1,7 @@
 # Technologies Used
 
 ## Data Cleaning and Analysis
-Pandas has been used to clean the data and perform an exploratory analysis. Further analysis will be completed using Python.
+Pandas has been used to clean the data and perform an exploratory analysis. Along with pandas, the datetime library as well as numpy were loaded for the cleaning and exploratory analysis.  Further analysis will be completed using Python.
 
 ## Database Storage
 We plan to use AWS to store the dataset and connect with pgadmin from there to further transform the data for visualization.
