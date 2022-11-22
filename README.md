@@ -76,7 +76,14 @@ Our provision Machine Learning Model is the Random Forest Classifier. We chose a
 ## Results
 
 ## Tableau Interactive Dashboard
+The team is working to create an intereactive dashboard in Tableau that will be used during a presentation to governemnt officials in Chicago.  The goal is to provide the following data on the dashboard:
+* A bubble chart to show the types of crimes that can be filtered by distrcit or year.
+* A heat map that shows crimes by district that can be filtered by the type of crime, year, and whether or not an arrest was made.
+* A chart to show the arrest rates filtered by year and type of crime.
+* A chart to show the trends over time for each district that can be filtered by the type of crime.
+* A line chart to show the times that crimes are committed and filtered by whether or not an arrest was made.
 
+The group will then present a recommendation to the city council based on the results of the data analysis.
 ## Summary
 
 Google slide link:
