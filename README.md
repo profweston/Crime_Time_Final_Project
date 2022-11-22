@@ -5,6 +5,9 @@ The City of Chicago has a long history of crime. The overall crime rate is highe
 
 Google slide link: [Slides](https://docs.google.com/presentation/d/1aL27DWHeShtGu0Y2L8k9DK4RNyBFMVQTkkwG990Ahz0/edit?usp=sharing)
 
+<img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/flowchart.drawio.png" width="500">
+
+
 ## Reason
 
 Several members of the team expressed an interested in researching in the broad area of crime. We discussed several options for locations and eventually settled on Chicago. When looking at the data file, we observed that there are many crimes reported that result in no arrests. Thus, we decided to try to build a machine learning model that can be used to predict arrest rate based on location, time, and/or type of crime committed.
