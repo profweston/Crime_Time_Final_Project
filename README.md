@@ -25,6 +25,8 @@ Jarod Peters [branch](https://github.com/profweston/Crime_Time_Final_Project/tre
 Andres Rosas [branch](https://github.com/profweston/Crime_Time_Final_Project/tree/andres)\
 Melissa Weston-Puett [branch](https://github.com/profweston/Crime_Time_Final_Project/tree/mels-branch)
 
+## Communication Protocol
+
 ## Project Steps
 
 This flowchart indicates the steps taken to complete the project. A summary of each step follows/
@@ -73,7 +75,7 @@ When splitting the dataset to training and testing sets, the train_test_split fu
 
 ### Creation of AWS Database
 
-A database was initially created using Postgres. Two tables were created and merged to make the final data file used for data analysis.
+A database was initially created using Postgres. Two tables were created and merged to make the final data file used for data analysis. 
 
 ![Schema for Joining](/Resources/Schema.png)
 
@@ -81,7 +83,9 @@ The ERD displays the relationship among the tables.
 
 ![Relational Diagram](/Resources/Crime_time_ERD.png)
 
-Note: Discuss linking this to AWS when complete
+Note: Discuss linking this to AWS when complete - example code below
+
+
 
 ### Tableau Interactive Dashboard 
 
@@ -113,10 +117,10 @@ The model used in the machine learning is the RandomForestClassifier. This model
  
 The RandomForestClassifier has many benefits that suit the needs of the crime dataset that was chosen. These benefits are:
  
-* It has resistance against overfitting. With the dataset being so large, this could be a potential issue, so using this model will be effective against it.
+* It has resistance against overfitting. With the dataset having over a million rows, this could be a potential issue, so using this model will be effective against it.
 * It can be used to rank the features that will not be useful to the machine learning model. The dataset has many features with some being obvious that will be no use to the model. This function will allow us to get rid of unnecessary features not needed.
 * It has resistance to outliers. With such a large dataset, outliers are unavoidable so this resistance is a nice asset.
-* This model also runs good on large dataset. As previously stated, this datasetis very large, so to have a model that runs well on a larger dataset will be ideal.
+* This model also runs good on large dataset. As previously stated, this dataset is very large, so to have a model that runs well on a larger dataset will be ideal.
  
 However, despite these numerous benefits there are drawbacks to this model.
 * The model is not easy to explain. Because of the complexity of the model it can make it difficult to interpret the results. . With so much information and decision trees created and combined, the end results inevitably becomes complex. 
