@@ -61,10 +61,10 @@ Our target variable is whether an arrest is made.
 
 In order to determine less obvious features to take out, we implemented the RandomForestClassifier’s ability to rank the features.
 <insert pic>
- 
+
 After running it the first time with the more obvious features dropped first, the ranked features appeared and the lesser ranked features were dropped.
 
-**#### Training and Testing Sets**
+#### Training and Testing Sets
  
 When splitting the dataset to training and testing sets, the train_test_split function was used. Unfortunately, when performed on the entire dataset, a memery error occurred. Thus, the train_size parameter was added in order to ease the computational power that was done when training the dataset. The final code is displayed below:
 
@@ -80,7 +80,7 @@ The ERD displays the relationship among the tables.
 
 <Discuss linking this to AWS when complete>
 
-## Tableau Interactive Dashboard 
+### Tableau Interactive Dashboard 
 
 The team is working to create an interactive dashboard in Tableau that will be used during a presentation to government officials in Chicago.  The goal is to provide the following data on the dashboard:
  
@@ -117,7 +117,7 @@ The RandomForestClassifier has many benefits that suit the needs of the crime da
  
 However, despite these numerous benefits there are drawbacks to this model.
 * The model is not easy to explain. Because of the complexity of the model it can make it difficult to interpret the results. . With so much information and decision trees created and combined, the end results inevitably becomes complex. 
-*The model also can be computationally heavy. As stated earlier, a memory error occurred when running the model because the computer could not handle the processing.
+* The model also can be computationally heavy. As stated earlier, a memory error occurred when running the model because the computer could not handle the processing.
  
 ## Results
 
