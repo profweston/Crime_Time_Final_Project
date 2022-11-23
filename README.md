@@ -60,13 +60,16 @@ The machine learning model used is the RandomForestClassifier. We chose a superv
 Our target variable is whether an arrest is made.
 
 In order to determine less obvious features to take out, we implemented the RandomForestClassifier’s ability to rank the features.
-<insert pic>
+
+![Code for feature priority](/Resources/Features.png)
 
 After running it the first time with the more obvious features dropped first, the ranked features appeared and the lesser ranked features were dropped.
 
 #### Training and Testing Sets
  
 When splitting the dataset to training and testing sets, the train_test_split function was used. Unfortunately, when performed on the entire dataset, a memery error occurred. Thus, the train_size parameter was added in order to ease the computational power that was done when training the dataset. The final code is displayed below:
+
+![Code for training](/Resources/Training.png)
 
 ### Creation of AWS Database
 
@@ -78,7 +81,7 @@ The ERD displays the relationship among the tables.
 
 ![Relational Diagram](/Resources/Crime_time_ERD.png)
 
-<Discuss linking this to AWS when complete>
+Note: Discuss linking this to AWS when complete
 
 ### Tableau Interactive Dashboard 
 
