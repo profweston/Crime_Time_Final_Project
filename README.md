@@ -5,8 +5,6 @@ The City of Chicago has a long history of crime. The overall crime rate is highe
 
 More information can be found in our Google slides: [Slides](https://docs.google.com/presentation/d/1aL27DWHeShtGu0Y2L8k9DK4RNyBFMVQTkkwG990Ahz0/edit?usp=sharing)
 
-<img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/flowchart.drawio.png" width="500">
-
 
 ## Reason
 
