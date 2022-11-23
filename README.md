@@ -53,7 +53,7 @@ The data were further preprocessed in preparation to build the machine learning 
  
 The “Date” column was then dropped as it was not longer needed.
 
-The machine learning model used is the RandomForestClassifier. We chose a supervised learning model because we are attempting to predict arrests based on data from previous arrests. This machine learning model is a type of ensemble learning, meaning that many different types of weaker algorithms are taken into account to create a better algorithm that will provide better results overall in accuracy with a decrease in variance. The RandomForestClassifier model starts by create several small and simple decision trees that are built from a random set of features. This model then takes these features and then proceed to combine them into a larger more complex decision tree that will be the final product.
+The machine learning model used is the RandomForestClassifier. We chose a supervised learning model because we are attempting to predict arrests based on data from previous arrests. This machine learning model is a type of ensemble learning, meaning that many different types of weaker algorithms are taken into account to create a better algorithm that will provide better results overall in accuracy with a decrease in variance. The RandomForestClassifier model starts by creating several small and simple decision trees that are built from a random set of features. This model then takes these features and then proceed to combine them into a larger more complex decision tree that will be the final product.
 
 #### Target and Feature Variables
 
