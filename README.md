@@ -28,6 +28,10 @@ Melissa Weston-Puett [branch](https://github.com/profweston/Crime_Time_Final_Pro
 
 ## Communication Protocol
 
+* Team will meet every Monday and Wednesday at normal class time.
+* Before the end of each work session, team will schedule the next meeting time. Meetings will take place on Zoom.
+* The group-03 Slack channel will be used to deliver progress updates to team members, ask questions, and offer help.
+
 ## Project Steps
 
 This flowchart indicates the steps taken to complete the project. A summary of each step follows/
