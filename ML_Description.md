@@ -1,3 +1,8 @@
+## ML: Supervised Over Unsupervised
+
+It was decided that the machine learning model to use would be a supervised machine learning model. This is because the question was already decided as "Can an arrest for a crime be predicted based on the location, time, and type of crime perpetrated?", which tells what to search for and the expected outcome as either (arrest or no arrest); these characteristics are ideal for a supervised machine learning model as opposed to an unsupervised machine learning model.
+
+
 ## Preliminary data preprocessing, Feature Engineering and Selection
 Prior to the machine learning, the data needed to preprocessed. This meant dropping columns that provided no benefits to the machine learning. A few examples of the columns that provided nothing to the machine learning is “ID” and “Case Number”; these columns are nothing more than a way to identify the crime. There is no repetitiveness to them or way to predict if there was an arrest based on this information alone so it could safely be taken out. Besides this, some data needed to be encoded so that the data was numbers, not words; in order to do this, the LabelEncoder() function was used on the “Primary Type” column. Which would change the column value, such as “THEFT” to a number “33”. Lastly, the “time_binned” column was created by extracting the hour from the hour from the “Date” column by importing datetime with the code ``` cleaned_crime_df["Hour"] = pd.to_datetime(cleaned_crime_df["Date"]).dt.hour``` (with datetime as dt) and then binning the newly created “Hour” column. The “Date” column was then dropped, seeing that it was not needed any longer.
 
