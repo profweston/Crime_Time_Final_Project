@@ -46,24 +46,24 @@ Data were filtered or dropped initially with Pandas using the following criteria
 
 The data were further preprocessed in preparation to build the machine learning model. This meant dropping columns that provided no benefits to the machine learning. For example, “ID” and “Case Number” were a way to identify the crime and thus provided nothing meaningful to the model. Furthermore, some data required encoding so that the data were numbers and not words. In order to do this, the LabelEncoder() function was used on the “Primary Type” column. This changed the column value, such as “THEFT” to a number “33”. The “time_binned” column was created by extracting the hour from the time portion of the “Date” column by importing datetime with the code and then binning the newly created “Hour” column. Lastly, the month column was extracted from the date column.
 
- ![Code for datetime](/Resources/datetime.png)
- 
- ![Code for time bins](/Resources/bins.png)
+ <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/datetime.png" width="800">
+
+ <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/bins.png" width="800">
  
 
 ### Creation of AWS Database
 
 A database was initially created using Postgres via pdAmin. Two tables were created from the raw data and merged to make the final data file used for data analysis. 
 
-![Schema for Joining](/Resources/Schema.png)
+ <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/inner_join.png" width="800">
 
 The Entity Relational Diagram (ERD) displays the relationship among the tables. 
 
-![Relational Diagram](/Resources/Crime_time_ERD.png)
+ <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/Crime_time_ERD.png" width="800">
 
 The database was ultimately hosted by AWS to ensure access by all team members. The pgAdmin database was connected to AWS by creating an AWS server within pdAdmin. The database was also connected to Jupyter Notebook using SQLAlchemy and creating an engine. This connection is represented in the code below.
 
-![Connection String to AWS](/Resources/Connection.png)
+ <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/Connection.png" width="800">
 
 ### Machine Learning Model
 
@@ -71,13 +71,13 @@ The machine learning model used is the RandomForestClassifier. We chose a superv
 
 **_Target and Feature Variables:_** Our target variable is whether an arrest is made. In order to determine less obvious features to take out, we implemented the RandomForestClassifier’s ability to rank the features.
 
-![Code for feature priority](/Resources/Features.png)
+ <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/Features.png" width="800">
 
 After running it the first time with the more obvious features dropped first, the ranked features appeared and the lesser ranked features were dropped.
 
 **_Training and Testing Sets:_** When splitting the dataset to training and testing sets, the train_test_split function was used. Unfortunately, when performed on the entire dataset, a memery error occurred. Thus, the train_size parameter was added in order to ease the computational power that was done when training the dataset. The final code is displayed below:
 
-![Code for training](/Resources/Training.png)
+ <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/Training.png" width="800">
 
 **_Benefits and Limitations:_** The model used in the machine learning is the RandomForestClassifier. This model starts by creating several small and simple decision trees that are built from a random set of features. This model then takes these features and then proceed to combine them into a larger more complex decision tree that will be the final product.
  
@@ -116,11 +116,13 @@ Each of these visualizations is discussed in the results section.
 ### Machine Learning Model 
 Our goal was to be able to accurately predict if an arrest is made according to type of crime and the time and location of which the crime is committed. After using the Random Forest Classifier to predict our target based on relative features, our accuracy score is 87.5%. This means that the model correctly predicted the arrest for 87.5% of the crimes.  Acccording to our classification report, the precision for prediction of the arrests and nonarrests are in line with each other.  However, the recall (sensitivity) for predicting arrest is much lower than for predicting no arrest.  This measure indicates the correct positive predictions relative to the total actual positives.The average F-1 score of 0.78 indicates that there is a fairly high balance between recall and precision. Thus, as the model is now, it is marginally successful at predicting whether an arrest is made. Even if the accuracy score could be better, the confusion matrix indicates the model is performing well finding the positive true arrests (true positive)and the negative nonarrests (true negative).
 
+ <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/confusion.png" width="800">
+ 
 ### Most Common Crimes
 
 The Bubble Chart below shows the distribution of the types of crimes committed in Chicago. Based on our results, The most common crime committed in Chicago is theft.
 
-  ![Most Common Types of Crime](/Resources/Bubble.png)
+ <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/Bubble.png" width="800">
   
 ### Arrest Rates 
 
