@@ -113,11 +113,27 @@ Each of these visualizations is discussed in the results section.
  
 ## Results
 
+### Machine Learning Model 
+Our goal was to be able to accurately predict if an arrest is made according to type of crime and the time and location of which the crime is committed. After using the Random Forest Classifier to predict our target based on relative features, our accuracy score is 87.5%. This means that the model correctly predicted the arrest for 87.5% of the crimes.  Acccording to our classification report, the precision for prediction of the arrests and nonarrests are in line with each other.  However, the recall (sensitivity) for predicting arrest is much lower than for predicting no arrest.  This measure indicates the correct positive predictions relative to the total actual positives.The average F-1 score of 0.78 indicates that there is a fairly high balance between recall and precision. Thus, as the model is now, it is marginally successful at predicting whether an arrest is made. Even if the accuracy score could be better, the confusion matrix indicates the model is performing well finding the positive true arrests (true positive)and the negative nonarrests (true negative).
+
+### Most Common Crimes
+
+The Bubble Chart below shows the distribution of the types of crimes committed in Chicago. Based on our results, The most common crime committed in Chicago is theft.
+
   ![Most Common Types of Crime](/Resources/Bubble.png)
+  
+### Arrest Rates 
+
+
+  ![Arrests rates](/Resources/Arrests.png)
+  
+### Crime by District
   
   ![Crime by District](/Resources/District.png)
     
-  ![Arrests rates](/Resources/Arrests.png)
+## Crime by Time
+
+
 ## Summary
  
 ## Recommendations 
