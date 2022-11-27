@@ -44,31 +44,30 @@ Data were filtered or dropped initially with Pandas using the following criteria
 2. Rows including NaNs and empty cells were deleted.
 3. Columns not contributing to our data inquiry were dropped.
 
-The data were further preprocessed in preparation to build the machine learning model. This meant dropping columns that provided no benefits to the machine learning. For example, “ID” and “Case Number” were a way to identify the crime and thus provided nothing meaningful to the model. Furthermore, some data required encoding so that the data were numbers and not words. In order to do this, the LabelEncoder() function was used on the “Primary Type” column. This changed the column value, such as “THEFT” to a number “33”. The “time_binned” column was created by extracting the hour from the time portion of the “Date” column by importing datetime with the code and then binning the newly created “Hour” column.
+The data were further preprocessed in preparation to build the machine learning model. This meant dropping columns that provided no benefits to the machine learning. For example, “ID” and “Case Number” were a way to identify the crime and thus provided nothing meaningful to the model. Furthermore, some data required encoding so that the data were numbers and not words. In order to do this, the LabelEncoder() function was used on the “Primary Type” column. This changed the column value, such as “THEFT” to a number “33”. The “time_binned” column was created by extracting the hour from the time portion of the “Date” column by importing datetime with the code and then binning the newly created “Hour” column. Lastly, the month column was extracted from the date column.
 
- <img src="http://github.com/profweston/Crime_Time_Final_Project/Resources/datetime.png" width = "100" height= "20"/>
-
+ ![Code for datetime](/Resources/datetime.png)
+ 
  ![Code for time bins](/Resources/bins.png)
  
-Lastly, the month column was extracted from the date column.
 
 ### Creation of AWS Database
 
-A database was initially created using Postgres. Two tables were created and merged to make the final data file used for data analysis. 
+A database was initially created using Postgres via pdAmin. Two tables were created from the raw data and merged to make the final data file used for data analysis. 
 
 ![Schema for Joining](/Resources/Schema.png)
 
-The ERD displays the relationship among the tables. 
+The Entity Relational Diagram (ERD) displays the relationship among the tables. 
 
 ![Relational Diagram](/Resources/Crime_time_ERD.png)
 
-Note: Discuss linking this to AWS when complete - example code below
+The database was ultimately hosted by AWS to ensure access by all team members. The pgAdmin database was connected to AWS by creating an AWS server within pdAdmin. The database was also connected to Jupyter Notebook using SQLAlchemy and creating an engine. This connection is represented in the code below.
 
 ![Connection String to AWS](/Resources/Connection.png)
 
 ### Machine Learning Model
 
-The machine learning model used is the RandomForestClassifier. We chose a supervised learning model because we are attempting to predict arrests based on data from previous arrests. This machine learning model is a type of ensemble learning, meaning that many different types of weaker algorithms are taken into account to create a better algorithm that will provide better results overall in accuracy with a decrease in variance. The RandomForestClassifier model starts by creating several small and simple decision trees that are built from a random set of features. This model then takes these features and then proceed to combine them into a larger more complex decision tree that will be the final product.
+The machine learning model used is the RandomForestClassifier. We chose a supervised learning model because we are attempting to predict arrests based on data from previous arrests. This machine learning model is a type of ensemble learning, meaning that many different types of weaker algorithms are taken into account to create a better algorithm that will provide better results overall in accuracy with a decrease in variance. The RandomForestClassifier model starts by creating several small and simple decision trees that are built from a random set of features. This model then takes these features and proceeds to combine them into a larger more complex decision tree that will be the final product.
 
 **_Target and Feature Variables:_** Our target variable is whether an arrest is made. In order to determine less obvious features to take out, we implemented the RandomForestClassifier’s ability to rank the features.
 
@@ -95,33 +94,30 @@ However, despite these numerous benefits there are drawbacks to this model.
 
 ### Tableau Interactive Dashboard 
 
-The team is working to create an interactive dashboard in Tableau that will be used during a presentation to government officials in Chicago.  The goal is to provide the following data on the dashboard:
+An interactive dashboard was created in Tableau that will be used during a presentation to government officials in Chicago.  The goal was to provide the following data on the dashboard:
  
-* Results from the Machine Learning Model analysis (TBD)
+* Results from the Machine Learning Model analysis
  
 * A bubble chart to show the types of crimes that can be filtered by district or year.
   
-  ![Most Common Types of Crime](/Resources/Bubble.png)
-  
 * A heat map that shows crimes by district that can be filtered by the type of crime, year, and whether or not an arrest was made.
   
-  ![Crime by District](/Resources/District.png)
-    
 * A bar chart to show the arrest rates filtered by year and type of crime.
+    
+* A chart to show the trends over time for each district that can be filtered by the type of crime.
   
-  ![Arrests rates](/Resources/Arrests.png)
-  
-* A chart to show the trends over time for each district that can be filtered by the type of crime. (TBD)
-  
-* A line chart to show the times that crimes are committed and filtered by whether or not an arrest was made. (TBD)
+* A line chart to show the times that crimes are committed and filtered by whether or not an arrest was made.
 
-The group will then present a recommendation to the city council based on the results of the data analysis.
+Each of these visualizations is discussed in the results section.
 
-
- 
  
 ## Results
 
+  ![Most Common Types of Crime](/Resources/Bubble.png)
+  
+  ![Crime by District](/Resources/District.png)
+    
+  ![Arrests rates](/Resources/Arrests.png)
 ## Summary
  
 ## Recommendations 
