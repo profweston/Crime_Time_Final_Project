@@ -26,31 +26,22 @@ Jarod Peters [branch](https://github.com/profweston/Crime_Time_Final_Project/tre
 Andres Rosas [branch](https://github.com/profweston/Crime_Time_Final_Project/tree/andres)\
 Melissa Weston-Puett [branch](https://github.com/profweston/Crime_Time_Final_Project/tree/mels-branch)
 
-## Communication Protocol
-
-* Team will meet every Monday and Wednesday at normal class time.
-* Before the end of each work session, team will schedule the next meeting time. Meetings will take place on Zoom.
-* The group-03 Slack channel will be used to deliver progress updates to team members, ask questions, and offer help.
-
 ## Project Steps
 
-This flowchart indicates the steps taken to complete the project. A summary of each step follows/
-
-![Flowchart](/Resources/flowchart.drawio.png)
+This flowchart indicates the steps taken to complete the project. A summary of each step follows.
+![Flowchart](/Resources/updated_flowchart.png)
 
 ### Data Source
 
 The data for this project were retrieved from Data.gov and was published by The City of Chicago. [(Data Link)](https://catalog.data.gov/dataset/crimes-2001-to-present). 
 
-### Data Exploration
+### Data Preprocessing
 
 Data were filtered or dropped initially with Pandas using the following criteria:
 
 1. Data were filtered by date to include years 2015 and forward.
 2. Rows including NaNs and empty cells were deleted.
 3. Columns not contributing to our data inquiry were dropped.
-
-### Data Cleaning 
 
 The data were further preprocessed in preparation to build the machine learning model. This meant dropping columns that provided no benefits to the machine learning. For example, “ID” and “Case Number” were a way to identify the crime and thus provided nothing meaningful to the model. Furthermore, some data required encoding so that the data were numbers and not words. In order to do this, the LabelEncoder() function was used on the “Primary Type” column. This changed the column value, such as “THEFT” to a number “33”. Lastly, the “time_binned” column was created by extracting the hour from the time portion of the “Date” column by importing datetime with the code and then binning the newly created “Hour” column.
 
@@ -59,24 +50,6 @@ The data were further preprocessed in preparation to build the machine learning 
  ![Code for time bins](/Resources/bins.png)
  
 The “Date” column was then dropped as it was not longer needed.
-
-The machine learning model used is the RandomForestClassifier. We chose a supervised learning model because we are attempting to predict arrests based on data from previous arrests. This machine learning model is a type of ensemble learning, meaning that many different types of weaker algorithms are taken into account to create a better algorithm that will provide better results overall in accuracy with a decrease in variance. The RandomForestClassifier model starts by creating several small and simple decision trees that are built from a random set of features. This model then takes these features and then proceed to combine them into a larger more complex decision tree that will be the final product.
-
-#### Target and Feature Variables
-
-Our target variable is whether an arrest is made.
-
-In order to determine less obvious features to take out, we implemented the RandomForestClassifier’s ability to rank the features.
-
-![Code for feature priority](/Resources/Features.png)
-
-After running it the first time with the more obvious features dropped first, the ranked features appeared and the lesser ranked features were dropped.
-
-#### Training and Testing Sets
- 
-When splitting the dataset to training and testing sets, the train_test_split function was used. Unfortunately, when performed on the entire dataset, a memery error occurred. Thus, the train_size parameter was added in order to ease the computational power that was done when training the dataset. The final code is displayed below:
-
-![Code for training](/Resources/Training.png)
 
 ### Creation of AWS Database
 
@@ -91,6 +64,33 @@ The ERD displays the relationship among the tables.
 Note: Discuss linking this to AWS when complete - example code below
 
 ![Connection String to AWS](/Resources/connection.png)
+
+### Machine Learning Model
+
+The machine learning model used is the RandomForestClassifier. We chose a supervised learning model because we are attempting to predict arrests based on data from previous arrests. This machine learning model is a type of ensemble learning, meaning that many different types of weaker algorithms are taken into account to create a better algorithm that will provide better results overall in accuracy with a decrease in variance. The RandomForestClassifier model starts by creating several small and simple decision trees that are built from a random set of features. This model then takes these features and then proceed to combine them into a larger more complex decision tree that will be the final product.
+
+**_Target and Feature Variables:_** Our target variable is whether an arrest is made. In order to determine less obvious features to take out, we implemented the RandomForestClassifier’s ability to rank the features.
+
+![Code for feature priority](/Resources/Features.png)
+
+After running it the first time with the more obvious features dropped first, the ranked features appeared and the lesser ranked features were dropped.
+
+**_Training and Testing Sets:_** When splitting the dataset to training and testing sets, the train_test_split function was used. Unfortunately, when performed on the entire dataset, a memery error occurred. Thus, the train_size parameter was added in order to ease the computational power that was done when training the dataset. The final code is displayed below:
+
+![Code for training](/Resources/Training.png)
+
+**_Benefits and Limitations:_** The model used in the machine learning is the RandomForestClassifier. This model starts by creating several small and simple decision trees that are built from a random set of features. This model then takes these features and then proceed to combine them into a larger more complex decision tree that will be the final product.
+ 
+The RandomForestClassifier has many benefits that suit the needs of the crime dataset that was chosen. These benefits are:
+ 
+* It has resistance against overfitting. With the dataset having over a million rows, this could be a potential issue, so using this model will be effective against it.
+* It can be used to rank the features that will not be useful to the machine learning model. The dataset has many features with some being obvious that will be no use to the model. This function will allow us to get rid of unnecessary features not needed.
+* It has resistance to outliers. With such a large dataset, outliers are unavoidable so this resistance is a nice asset.
+* This model also runs good on large dataset. As previously stated, this dataset is very large, so to have a model that runs well on a larger dataset will be ideal.
+ 
+However, despite these numerous benefits there are drawbacks to this model.
+* The model is not easy to explain. Because of the complexity of the model it can make it difficult to interpret the results. . With so much information and decision trees created and combined, the end results inevitably becomes complex. 
+* The model also can be computationally heavy. As stated earlier, a memory error occurred when running the model because the computer could not handle the processing.
 
 ### Tableau Interactive Dashboard 
 
@@ -116,20 +116,8 @@ The team is working to create an interactive dashboard in Tableau that will be u
 
 The group will then present a recommendation to the city council based on the results of the data analysis.
 
-## Benefits and Limitations of Machine Learning Model
+
  
-The model used in the machine learning is the RandomForestClassifier. This model starts by creating several small and simple decision trees that are built from a random set of features. This model then takes these features and then proceed to combine them into a larger more complex decision tree that will be the final product.
- 
-The RandomForestClassifier has many benefits that suit the needs of the crime dataset that was chosen. These benefits are:
- 
-* It has resistance against overfitting. With the dataset having over a million rows, this could be a potential issue, so using this model will be effective against it.
-* It can be used to rank the features that will not be useful to the machine learning model. The dataset has many features with some being obvious that will be no use to the model. This function will allow us to get rid of unnecessary features not needed.
-* It has resistance to outliers. With such a large dataset, outliers are unavoidable so this resistance is a nice asset.
-* This model also runs good on large dataset. As previously stated, this dataset is very large, so to have a model that runs well on a larger dataset will be ideal.
- 
-However, despite these numerous benefits there are drawbacks to this model.
-* The model is not easy to explain. Because of the complexity of the model it can make it difficult to interpret the results. . With so much information and decision trees created and combined, the end results inevitably becomes complex. 
-* The model also can be computationally heavy. As stated earlier, a memory error occurred when running the model because the computer could not handle the processing.
  
 ## Results
 
