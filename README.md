@@ -55,7 +55,7 @@ The data were further preprocessed in preparation to build the machine learning 
 
 A database was initially created using Postgres via pdAmin. Two tables were created from the raw data and merged to make the final data file used for data analysis. 
 
- <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/inner_join.png" width="800">
+ <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/inner_join.png" width="400">
 
 The Entity Relational Diagram (ERD) displays the relationship among the tables. 
 
@@ -122,13 +122,13 @@ Our goal was to be able to accurately predict if an arrest is made according to 
 
 The Bubble Chart below shows the distribution of the types of crimes committed in Chicago. Based on our results, The most common crime committed in Chicago is theft.
 
- <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/Bubble.png" width="800">
+ <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/bubble.png" width="800">
   
 ### Arrest Rates 
 
+ <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/Arrests_bar.png" width="800">
 
-  ![Arrests rates](/Resources/Arrests.png)
-  
+
 ### Crime by District
   
   ![Crime by District](/Resources/District.png)
