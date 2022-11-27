@@ -43,13 +43,13 @@ Data were filtered or dropped initially with Pandas using the following criteria
 2. Rows including NaNs and empty cells were deleted.
 3. Columns not contributing to our data inquiry were dropped.
 
-The data were further preprocessed in preparation to build the machine learning model. This meant dropping columns that provided no benefits to the machine learning. For example, “ID” and “Case Number” were a way to identify the crime and thus provided nothing meaningful to the model. Furthermore, some data required encoding so that the data were numbers and not words. In order to do this, the LabelEncoder() function was used on the “Primary Type” column. This changed the column value, such as “THEFT” to a number “33”. Lastly, the “time_binned” column was created by extracting the hour from the time portion of the “Date” column by importing datetime with the code and then binning the newly created “Hour” column.
+The data were further preprocessed in preparation to build the machine learning model. This meant dropping columns that provided no benefits to the machine learning. For example, “ID” and “Case Number” were a way to identify the crime and thus provided nothing meaningful to the model. Furthermore, some data required encoding so that the data were numbers and not words. In order to do this, the LabelEncoder() function was used on the “Primary Type” column. This changed the column value, such as “THEFT” to a number “33”. The “time_binned” column was created by extracting the hour from the time portion of the “Date” column by importing datetime with the code and then binning the newly created “Hour” column.
 
  ![Code for datetime](/Resources/datetime.png)
 
  ![Code for time bins](/Resources/bins.png)
  
-The “Date” column was then dropped as it was not longer needed.
+Lastly, the month column was extracted from the date column.
 
 ### Creation of AWS Database
 
