@@ -63,7 +63,9 @@ The Entity Relational Diagram (ERD) displays the relationship among the tables.
 
 The database was ultimately hosted by AWS to ensure access by all team members. The pgAdmin database was connected to AWS by creating an AWS server within pdAdmin. The database was also connected to Jupyter Notebook using SQLAlchemy and creating an engine. This connection is represented in the code below.
 
- <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/Connection.png" width="800">
+
+ <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/Connection.png" width="600">
+ 
 
 ### Machine Learning Model
 
