@@ -63,7 +63,7 @@ The Entity Relational Diagram (ERD) displays the relationship among the tables.
 
 The database was ultimately hosted by AWS to ensure access by all team members. The pgAdmin database was connected to AWS by creating an AWS server within pdAdmin. The database was also connected to Jupyter Notebook using SQLAlchemy and creating an engine. This connection is represented in the code below.
 
- <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/Connection.png" width="400">
+ <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/Connection.png" width="800">
  
 
 ### Machine Learning Model
@@ -128,6 +128,8 @@ The bar chart below shows the proportion of arrests to nonarrests for the most f
  <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/Arrests_bar.png" width="800">
 
 ### Arrest Rate by District
+
+The heatmap belows show the arrest rate for District 1. This graph is interactive and the district can be changed in order to see how districts are performing individually.
   
  <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/district.png" width="800">
   
