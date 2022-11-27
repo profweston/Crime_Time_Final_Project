@@ -29,6 +29,7 @@ Melissa Weston-Puett [branch](https://github.com/profweston/Crime_Time_Final_Pro
 ## Project Steps
 
 This flowchart indicates the steps taken to complete the project. A summary of each step follows.
+
 ![Flowchart](/Resources/updated_flowchart.png)
 
 ### Data Source
