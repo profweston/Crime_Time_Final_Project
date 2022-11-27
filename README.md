@@ -63,7 +63,7 @@ The Entity Relational Diagram (ERD) displays the relationship among the tables.
 
 The database was ultimately hosted by AWS to ensure access by all team members. The pgAdmin database was connected to AWS by creating an AWS server within pdAdmin. The database was also connected to Jupyter Notebook using SQLAlchemy and creating an engine. This connection is represented in the code below.
 
- <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/Connection.png"width="400">
+ <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/Connection.png" width="400">
  
 
 ### Machine Learning Model
@@ -99,14 +99,10 @@ An interactive dashboard was created in Tableau that will be used during a prese
  
 * Results from the Machine Learning Model analysis
  
-* A bubble chart to show the types of crimes that can be filtered by district or year.
-  
-* A heat map that shows crimes by district that can be filtered by the type of crime, year, and whether or not an arrest was made.
-  
-* A bar chart to show the arrest rates filtered by year and type of crime.
-    
-* A chart to show the trends over time for each district that can be filtered by the type of crime.
-  
+* A bubble chart to show the most common types of crimes.
+* A bar chart to show the arrest rates by the type of crime.
+* A heat map that shows crimes by district that can be filtered by the type of crime, year, and whether or not an arrest was made.   
+* A chart to show the trends over time for each district that can be filtered by the type of crime. 
 * A line chart to show the times that crimes are committed and filtered by whether or not an arrest was made.
 
 Each of these visualizations is discussed in the results section.
@@ -121,20 +117,23 @@ Our goal was to be able to accurately predict if an arrest is made according to 
  
 ### Most Common Crimes
 
-The Bubble Chart below shows the distribution of the types of crimes committed in Chicago. Based on our results, The most common crime committed in Chicago is theft.
+The bubble chart below shows the distribution of the types of crimes committed in Chicago. Based on our results, the most common crime committed in Chicago is theft.
 
  <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/bubble.png" width="800">
   
 ### Arrest Rates 
 
+The bar chart below shows the proportion of arrests to nonarrests for the most frequent types of crime.
+
  <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/Arrests_bar.png" width="800">
 
-
-### Crime by District
+### Arrest Rate by District
   
-  ![Crime by District](/Resources/District.png)
+ <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/district.png" width="800">
+  
+### Crime by District
     
-## Crime by Time
+### Crime by Time
 
 
 ## Summary
