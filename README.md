@@ -63,7 +63,7 @@ The ERD displays the relationship among the tables.
 
 Note: Discuss linking this to AWS when complete - example code below
 
-![Connection String to AWS](/Resources/connection.png)
+![Connection String to AWS](/Resources/Connection.png)
 
 ### Machine Learning Model
 
