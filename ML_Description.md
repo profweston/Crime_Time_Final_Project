@@ -21,4 +21,6 @@ These benefits are:
 * This model also runs good on large dataset. As stated, prior, the dataset used is very large; to have a model that runs well on a larger dataset will be ideal.
 
 However, despite these numerous benefits there are drawbacks to this model; one drawback is that the model is not easy to explain.  Because of the complexity of the model, the reason why it works well, make it difficult to interpret. With so much information and decision trees created and combined, the end results inevitable becomes complex.  Also, the model also can be computationally heavy; as stated earlier, a memory error occurred when running the model because the computer could not handle the processing.
- 
+
+
+Slight improvements have been made to the model from the original. The month the crimes were committed were added the list of features the model uses. This change gave the same accuracy score but it increased the precision of arrested from 75% to 82% with a small cost (2% change at most) in precision not arrested and each of the recall values. In addition to this, when the features are ranked by importance, the 'Month' feature was determined be a relevancy of 10%. This was determined to be a general better improvement on the previous model because of a boost in one of precision categories with equivalent results in the other ones.
