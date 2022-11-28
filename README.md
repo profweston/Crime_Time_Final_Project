@@ -65,7 +65,7 @@ The database was ultimately hosted by AWS to ensure access by all team members. 
 
 
 
-<img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/Connection.png" width="800">
+<img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/Connection.png" width="400">
  
  
  
