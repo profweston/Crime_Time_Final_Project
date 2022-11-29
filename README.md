@@ -126,7 +126,7 @@ The bubble chart below shows the distribution of the types of crimes committed i
   
 ### Arrest Rates 
 
-The bar chart below shows the proportion of arrests to nonarrests for the most frequent types of crime. Although theft is a much more common crime, the proportion of arrests is lower than some of the other crimes. Interestingly, some crimes have a high arrest rate, but on closer inspection, these offenses do not involve a crime against another person. Thus, this result in not surprising.
+The bar chart below shows the proportion of arrests to nonarrests for the most frequent types of crime. Although theft is a much more common crime, the proportion of arrests is lower than some of the other crimes. Interestingly, some crimes have a high arrest rate, but on closer inspection, these offenses do not involve a crime against another person. Thus, this result in not surprising. On the other hand, crimes against others have an arrest rate that is much lower. In fact, none of the arrest rates were higher than approximately half of the crime rate. 
 
  <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/Arrests_bar.png" width="800">
 
@@ -145,5 +145,4 @@ The heatmap belows show the arrest rate for District 1. This graph is interactiv
  
 ## Recommendations 
 
-
-
+This analysis provides only a brief insight in the research of crime in Chicago. Furthermore, this analysis must be understood that this data set was not comprehensive in terms of certain crimes such as homicide. Future analyses should examine crime rates with attention to the distribution of police presence during a 24-hour period. Additionally, data analysis that examines general locations where a high amount of crime occurs could provide insight on providing additional security in those locations or introducing environmental factors that might deter crime, e.g., extra neighborhood street lighting or neighborhood educational programs.
