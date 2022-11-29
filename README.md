@@ -20,11 +20,11 @@ Several members of the team expressed an interested in researching the broad are
 
 ## Team Members
 
-Randy Melancon [branch](https://github.com/profweston/Crime_Time_Final_Project/tree/randys-branch)\
-Matthew Parrish [branch](https://github.com/profweston/Crime_Time_Final_Project/tree/mparrish)\
-Jarod Peters [branch](https://github.com/profweston/Crime_Time_Final_Project/tree/jarodpeters)\
-Andres Rosas [branch](https://github.com/profweston/Crime_Time_Final_Project/tree/andres)\
-Melissa Weston-Puett [branch](https://github.com/profweston/Crime_Time_Final_Project/tree/mels-branch)
+Randy Melancon 
+Matthew Parrish 
+Jarod Peters 
+Andres Rosas 
+Melissa Weston-Puett 
 
 ## Project Steps
 
