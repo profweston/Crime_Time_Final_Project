@@ -141,6 +141,8 @@ The heatmap belows show the arrest rate for District 1. This graph is interactiv
  
 ### Crime by Time
 
+The line graph below shows the amount of arrests made or not made by the hours in a day.
+
  <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/randy2-branch/Resources/Crime_hour.png" width="800">
 
 ## Summary
