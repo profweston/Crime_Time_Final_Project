@@ -72,25 +72,27 @@ The machine learning model used is the RandomForestClassifier. We chose a superv
 
 **_Target and Feature Variables:_** Our target variable is whether an arrest is made. In order to determine less obvious features to take out, we implemented the RandomForestClassifier’s ability to rank the features.
 
- <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/Features.png" width="800">
+ <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/Features.png" width="600">
 
 After running it the first time with the more obvious features dropped first, the ranked features appeared and the lesser ranked features were dropped.
 
-**_Training and Testing Sets:_** When splitting the dataset to training and testing sets, the train_test_split function was used. Unfortunately, when performed on the entire dataset, a memery error occurred. Thus, the train_size parameter was added in order to ease the computational power that was done when training the dataset. The final code is displayed below:
+**_Improvements to the Model:_** Slight improvements were made to the model from the original. The month was extracted from the crime date and added to the list of features the model uses. This was decided upon to investigate whether there might be any seasonal impact on crime.
+
+**_Training and Testing Sets:_** When splitting the dataset to training and testing sets, the train_test_split function was used. Unfortunately, when performed on the entire dataset, a memory error occurred. Thus, the train_size parameter was added in order to ease the computational power that was done when training the dataset. The final code is displayed below:
 
  <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/Training.png" width="800">
 
-**_Benefits and Limitations:_** The model used in the machine learning is the RandomForestClassifier. This model starts by creating several small and simple decision trees that are built from a random set of features. This model then takes these features and then proceed to combine them into a larger more complex decision tree that will be the final product.
- 
+**_Benefits and Limitations:_** The model used in the machine learning is the RandomForestClassifier. This model starts by creating several small and simple decision trees that are built from a random set of features. This model then takes these features and then proceeds to combine them into a larger more complex decision tree that will be the final product.
+
 The RandomForestClassifier has many benefits that suit the needs of the crime dataset that was chosen. These benefits are:
  
 * It has resistance against overfitting. With the dataset having over a million rows, this could be a potential issue, so using this model will be effective against it.
-* It can be used to rank the features that will not be useful to the machine learning model. The dataset has many features with some being obvious that will be no use to the model. This function will allow us to get rid of unnecessary features not needed.
+* It can be used to rank the features that will not be useful to the machine learning model. The dataset has many features with some being obvious that will be no use to the model. This function will allow us to get rid of unnecessary features.
 * It has resistance to outliers. With such a large dataset, outliers are unavoidable so this resistance is a nice asset.
-* This model also runs good on large dataset. As previously stated, this dataset is very large, so to have a model that runs well on a larger dataset will be ideal.
+* This model also runs good on large dataset. As previously stated, this dataset is very large, so to have a model that runs well on a larger dataset is ideal.
  
 However, despite these numerous benefits there are drawbacks to this model.
-* The model is not easy to explain. Because of the complexity of the model it can make it difficult to interpret the results. . With so much information and decision trees created and combined, the end results inevitably becomes complex. 
+* The model is not easy to explain. Because of the complexity of the model it can make it difficult to interpret the results. With so much information and decision trees created and combined, the end results inevitably become complex. 
 * The model also can be computationally heavy. As stated earlier, a memory error occurred when running the model because the computer could not handle the processing.
 
 ### Tableau Interactive Dashboard 
@@ -114,7 +116,7 @@ Link to Tableau Dashboard: [Link](https://public.tableau.com/app/profile/melissa
 ### Machine Learning Model 
 Our goal was to be able to accurately predict if an arrest is made according to type of crime and the time and location of which the crime is committed. After using the Random Forest Classifier to predict our target based on relative features, our accuracy score is 87.5%. This means that the model correctly predicted the arrest for 87.5% of the crimes.  Acccording to our classification report, the precision for prediction of the arrests and nonarrests are in line with each other.  However, the recall (sensitivity) for predicting no arrest is much lower than for predicting arrest.  This measure indicates the correct positive predictions relative to the total actual positives. The average F-1 score of 0.78 indicates that there is a fairly high balance between recall and precision. Thus, as the model is now, it is marginally successful at predicting whether an arrest is made. Even if the accuracy score could be better, the confusion matrix indicates the model is performing well finding the positive true arrests (true positive) and the negative nonarrests (true negative).
 
-Slight improvements were been made to the model from the original. The month the crimes were committed was added to the list of features the model uses. This change gave the same accuracy score but it increased the precision of arrested from 75% to 82% with a small cost (2% change at most) in precision not arrested and each of the recall values. In addition to this, when the features are ranked by importance, the 'Month' feature was determined be a relevancy of 10%. This was determined to be a general better improvement on the previous model because of a boost in one of precision categories with equivalent results in the other ones.
+When improving the model to include the month the crimes were committed, the accuracy score remained the same. However, this change increased the precision of arrested from 75% to 82% with a small cost (2% change at most) in precision not arrested and each of the recall values. In addition to this, when the features are ranked by importance, the 'Month' feature was determined to be a relevancy of 10%. This was determined to be a general better improvement on the previous model because of a boost in one of precision categories with equivalent results in the other ones.
 
  <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/confusion.png" width="800">
  
@@ -122,7 +124,7 @@ Slight improvements were been made to the model from the original. The month the
 
 The bubble chart below shows the distribution of the types of crimes committed in Chicago. Based on our results, the most common crime committed in Chicago is theft followed closely by battery and criminal damage. 
 
- <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/bubble.png" width="800">
+ <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/bubble.png" width="400">
   
 ### Arrest Rates 
 
