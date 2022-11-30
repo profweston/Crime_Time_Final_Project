@@ -140,7 +140,7 @@ The heatmap belows show the arrest rate for District 1. This graph is interactiv
 The following graph shows the two highest crime total categories broken out by district to identify which districts are experiencing the highest amounts of crime.
 
 <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/randy2-branch/Resources/Crime_qd.png" width="800">
- 
+
 ### Crime by Time
 
 The line graph below shows the amount of arrests made or not made by the hours in a day.
