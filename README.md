@@ -74,9 +74,9 @@ The machine learning model used is the RandomForestClassifier. We chose a superv
 
  <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/Features.png" width="600">
 
-After running it the first time with the more obvious features dropped first, the ranked features appeared and the lesser ranked features were dropped.
+After running it the first time with the more obvious features dropped first, the ranked features appeared and the lesser ranked features were dropped. Several different iterations were made taking features out and putting other features in. There typically wasn't a significant different until the type of crime was removed. Also, the 
 
-**_Improvements to the Model:_** Slight improvements were made to the model from the original. The month was extracted from the crime date and added to the list of features the model uses. This was decided upon to investigate whether there might be any seasonal impact on crime.
+**_Improvements to the Model:_** After examining the results as a group, slight improvements were made to the model from the original. The month was extracted from the crime date and added to the list of features the model uses. This was decided upon to investigate whether there might be any seasonal impact on crime.
 
 **_Training and Testing Sets:_** When splitting the dataset to training and testing sets, the train_test_split function was used. Unfortunately, when performed on the entire dataset, a memory error occurred. Thus, the train_size parameter was added in order to ease the computational power that was done when training the dataset. The final code is displayed below:
 
@@ -114,13 +114,17 @@ Link to Tableau Dashboard: [Link](https://public.tableau.com/app/profile/melissa
 ## Results
 
 ### Machine Learning Model 
-Our goal was to be able to accurately predict if an arrest is made according to type of crime and the time and location of which the crime is committed. After using the Random Forest Classifier to predict our target based on relative features, our accuracy score is 87.5%. This means that the model correctly predicted the arrest for 87.5% of the crimes.  Acccording to our classification report, the precision for prediction of the arrests and nonarrests are in line with each other.  However, the recall (sensitivity) for predicting arrest is much lower than for predicting no arrest.  This measure indicates the correct positive predictions relative to the total actual positives. The average F-1 score of 0.78 indicates that there is a fairly high balance between recall and precision. Thus, as the model is now, it is marginally successful at predicting whether an arrest is made. Even if the accuracy score could be better, the confusion matrix indicates the model is performing well finding the positive true arrests (true positive) and the negative nonarrests (true negative).
+Our goal was to be able to accurately predict if an arrest is made according to type of crime and the time and location of which the crime is committed. After using the Random Forest Classifier to predict our target based on relative features, our accuracy score is 87.5%. This means that the model correctly predicted the arrest for 87.5% of the crimes.  
+
+<img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/accuracy.png" width="800">
+
+Acccording to our classification report, the precision for prediction of the arrests and nonarrests are in line with each other.  However, the recall (sensitivity) for predicting arrest is much lower than for predicting no arrest.  This measure indicates the correct positive predictions relative to the total actual positives. The average F-1 score of 0.78 indicates that there is a fairly high balance between recall and precision. Thus, as the model is now, it is marginally successful at predicting whether an arrest is made. Even if the accuracy score could be better, the confusion matrix indicates the model is performing well finding the positive true arrests (true positive) and the negative nonarrests (true negative).
 
  <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/confusion.png" width="800">
  
 When improving the model to include the month the crimes were committed, the accuracy score remained the same. However, this change increased the precision of arrested from 75% to 82% with a small cost (2% change at most) in precision not arrested and each of the recall values. In addition to this, when the features are ranked by importance, the 'Month' feature was determined to be a relevancy of 10%. This was determined to be a general better improvement on the previous model because of a boost in one of precision categories with equivalent results in the other ones.
 
-
+<img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/classification.png" width="800">
  
 ### Most Common Crimes
 
@@ -148,10 +152,9 @@ The following bar graph shows the two highest crime total categories broken out 
 
 ### Crime by Time
 
-The line graph below shows the amount of arrests made or not made by the hours in a day.
+The line graph below shows the amount of arrests made or not made by the hours in a day. There is much more variation among time of day when examining the nonarrests trend. This is most likely due to a much larger proportion of nonarrests made. The more common time for arrests to be made tends to be in the evening hours but once midnight comes, the arrests rate drops. 
 
  <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/randy2-branch/Resources/Crime_hour.png" width="800">
-
 
 ## Summary
 
