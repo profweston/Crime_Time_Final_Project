@@ -26,6 +26,14 @@ Jarod Peters
 Andres Rosas 
 Melissa Weston-Puett 
 
+## Technology Used
+
+* Python and Jupyter notebook were used for data cleaning, preprocessing, data exploration, and the machine learning analysis
+* pgAdmin was used for the static database
+* Amazon Web Service provided the host for the database
+* Tableau Public was used for the interactive storyboard
+* Google slides used to tell the story of the project
+
 ## Project Steps
 
 This flowchart indicates the steps taken to complete the project. A summary of each step follows.
@@ -70,11 +78,11 @@ The database was ultimately hosted by AWS to ensure access by all team members. 
 
 The machine learning model used is the RandomForestClassifier. We chose a supervised learning model because we are attempting to predict arrests based on data from previous arrests. This machine learning model is a type of ensemble learning, meaning that many different types of weaker algorithms are taken into account to create a better algorithm that will increase in accuracy with a decrease in variance. The RandomForestClassifier model starts by creating several small and simple decision trees that are built from a random set of features. This model then takes these features and proceeds to combine them into a larger more complex decision tree that will be the final product.
 
-**_Target and Feature Variables:_** Our target variable is whether an arrest is made. In order to determine less obvious features to take out, we implemented the RandomForestClassifier’s ability to rank the features.
+**_Data Exploration:_** In additional to trying the RandomForestClassifier, random undersampling was attempted to address the imbalance of arrests versus nonarrests made. Consequently, the Random Forest still gave better results and in addition we were able to garner the inherent benefits of the Random Forest Model discussed in a later section of this document. Also when running the Random Forest model, several different iterations were made taking features out and putting other features in. Additionally, the number of estimators was changed changed to see if a higher number would make an impact on the model. There typically wasn't a significant difference.
+
+**_Target and Feature Variables:_** Our target variable is whether an arrest is made. In order to determine less obvious features to take out, we implemented the RandomForestClassifier’s ability to rank the features. After running it the first time with the more obvious features dropped first, the ranked features appeared and the lesser ranked features were dropped. 
 
  <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/Features.png" width="600">
-
-After running it the first time with the more obvious features dropped first, the ranked features appeared and the lesser ranked features were dropped. Several different iterations were made taking features out and putting other features in. There typically wasn't a significant different until the type of crime was removed. Also, the 
 
 **_Improvements to the Model:_** After examining the results as a group, slight improvements were made to the model from the original. The month was extracted from the crime date and added to the list of features the model uses. This was decided upon to investigate whether there might be any seasonal impact on crime.
 
@@ -104,7 +112,7 @@ An interactive dashboard was created in Tableau that will be used during a prese
 * A bubble chart to show the most common types of crimes.
 * A bar chart to show the arrest rates by the type of crime.
 * A heat map that shows crimes by district that can be filtered by the type of crime, year, and whether or not an arrest was made.   
-* A chart to show the trends over time for each district that can be filtered by the type of crime. 
+* A bar chart to show crime rates broken out by dstrict and quarter of the year.
 * A line chart to show the times that crimes are committed and filtered by whether or not an arrest was made.
 
 Each of these visualizations is discussed in the results section.
@@ -158,7 +166,8 @@ The line graph below shows the amount of arrests made or not made by the hours i
 
 ## Summary
 
+Crime is inherently a social issue and the complexity of its nature being interwoven in economic recessions and cultural constructs makes it a concept that is uncertain. That being said, crime data analysis can be used to provide important insights into crime prevention. In this analysis, we applied a Random Forest Classifier to attempt to predict whether an arrest is made based on type of crime and time and location. 
  
 ## Recommendations 
 
-This analysis provides only a brief insight in the research of crime in Chicago. Furthermore, this analysis must be understood that this data set was not comprehensive in terms of certain crimes such as homicide. Future analyses should examine crime rates with attention to the distribution of police presence during a 24-hour period. Additionally, data analysis that examines general locations where a high amount of crime occurs could provide insight on providing additional security in those locations or introducing environmental factors that might deter crime, e.g., extra neighborhood street lighting or neighborhood educational programs.
+This analysis provides only a brief insight in the research of crime in Chicago. Furthermore, this analysis must be understood that this data set was not comprehensive in terms of certain crimes such as homicide. Future analyses should examine crime rates with attention to the distribution of police presence during a 24-hour period in order to better distribute law enforcement resources. Additionally, data analysis that examines general locations where a high amount of crime occurs could provide insight on providing additional security in those locations or introducing environmental factors that might deter crime, e.g., extra neighborhood street lighting or neighborhood educational programs.
