@@ -114,11 +114,13 @@ Link to Tableau Dashboard: [Link](https://public.tableau.com/app/profile/melissa
 ## Results
 
 ### Machine Learning Model 
-Our goal was to be able to accurately predict if an arrest is made according to type of crime and the time and location of which the crime is committed. After using the Random Forest Classifier to predict our target based on relative features, our accuracy score is 87.5%. This means that the model correctly predicted the arrest for 87.5% of the crimes.  Acccording to our classification report, the precision for prediction of the arrests and nonarrests are in line with each other.  However, the recall (sensitivity) for predicting no arrest is much lower than for predicting arrest.  This measure indicates the correct positive predictions relative to the total actual positives. The average F-1 score of 0.78 indicates that there is a fairly high balance between recall and precision. Thus, as the model is now, it is marginally successful at predicting whether an arrest is made. Even if the accuracy score could be better, the confusion matrix indicates the model is performing well finding the positive true arrests (true positive) and the negative nonarrests (true negative).
-
-When improving the model to include the month the crimes were committed, the accuracy score remained the same. However, this change increased the precision of arrested from 75% to 82% with a small cost (2% change at most) in precision not arrested and each of the recall values. In addition to this, when the features are ranked by importance, the 'Month' feature was determined to be a relevancy of 10%. This was determined to be a general better improvement on the previous model because of a boost in one of precision categories with equivalent results in the other ones.
+Our goal was to be able to accurately predict if an arrest is made according to type of crime and the time and location of which the crime is committed. After using the Random Forest Classifier to predict our target based on relative features, our accuracy score is 87.5%. This means that the model correctly predicted the arrest for 87.5% of the crimes.  Acccording to our classification report, the precision for prediction of the arrests and nonarrests are in line with each other.  However, the recall (sensitivity) for predicting arrest is much lower than for predicting no arrest.  This measure indicates the correct positive predictions relative to the total actual positives. The average F-1 score of 0.78 indicates that there is a fairly high balance between recall and precision. Thus, as the model is now, it is marginally successful at predicting whether an arrest is made. Even if the accuracy score could be better, the confusion matrix indicates the model is performing well finding the positive true arrests (true positive) and the negative nonarrests (true negative).
 
  <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/confusion.png" width="800">
+ 
+When improving the model to include the month the crimes were committed, the accuracy score remained the same. However, this change increased the precision of arrested from 75% to 82% with a small cost (2% change at most) in precision not arrested and each of the recall values. In addition to this, when the features are ranked by importance, the 'Month' feature was determined to be a relevancy of 10%. This was determined to be a general better improvement on the previous model because of a boost in one of precision categories with equivalent results in the other ones.
+
+
  
 ### Most Common Crimes
 
@@ -134,12 +136,21 @@ The bar chart below shows the proportion of arrests to nonarrests for the most f
 
 ### Arrest Rate by District
 
-The heatmap belows show the arrest rate for District 1. This graph is interactive and the district can be changed in order to see how districts are performing individually.
+The heatmap belows show the arrest rate for District 1. This graph is interactive and the district can be changed in order to see how districts are performing individually in terms of arrest rates.
+
  <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/district.png" width="800">
   
-### Crime by District
-    
+### Crime by District and Quarter
+
+The following bar graph shows the two highest crime total categories broken out by district to identify which districts are experiencing the highest amounts of crime. It can be filtered by quarter and by district.
+
+<img src="https://github.com/profweston/Crime_Time_Final_Project/blob/randy2-branch/Resources/Crime_qd.png" width="800">
+
 ### Crime by Time
+
+The line graph below shows the amount of arrests made or not made by the hours in a day.
+
+ <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/randy2-branch/Resources/Crime_hour.png" width="800">
 
 
 ## Summary
