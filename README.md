@@ -163,7 +163,6 @@ The following bar graph shows the two highest crime total categories broken out 
 
 The line graph below shows the amount of arrests made or not made by the hours in a day. There is much more variation among time of day when examining the nonarrests trend. This is most likely due to a much larger proportion of nonarrests made. The more common time for arrests to be made tends to be in the evening hours but once midnight comes, the arrests rate drops. 
 
-
  <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/randy2-branch/Resources/Crime_hour.png" width="800">
 
 ## Summary
