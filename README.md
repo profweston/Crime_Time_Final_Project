@@ -117,7 +117,7 @@ An interactive dashboard was created in Tableau that will be used during a prese
 
 Each of these visualizations is discussed in the results section.
 
-Link to Tableau Dashboard: [Link](https://public.tableau.com/app/profile/melissa.weston.puett/viz/Crime_Time_16696811776780/CrimeTime?publish=yes)
+Link to Tableau Dashboard: [Link](https://public.tableau.com/app/profile/melissa.weston.puett/viz/Crime_Time_16696811776780/Presentation?publish=yes)
  
 ## Results
 
