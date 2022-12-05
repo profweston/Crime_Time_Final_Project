@@ -128,7 +128,7 @@ The bubble chart below shows the distribution of the types of crimes committed i
 
 The bar chart below shows the proportion of arrests to nonarrests for the most frequent types of crime. Although theft is a much more common crime, the proportion of arrests is lower than some of the other crimes. Interestingly, some crimes have a high arrest rate, but on closer inspection, these offenses do not involve a crime against another person. Thus, this result in not surprising.
 
- <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/Arrests_bar.png" width="800">
+ <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/christmas_bar.png" width="800">
 
 ### Arrest Rate by District
 
