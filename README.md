@@ -135,24 +135,19 @@ The bar chart below shows the proportion of arrests to nonarrests for the most f
 The line graph below shows the amount of arrests made or not made by the hours in a day.
 
  <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/randy2-branch/Resources/Crime_hour.png" width="800">
- 
-### Arrest Rate by District
 
-The heatmap belows show the arrest rate for District 1. This graph is interactive and the district can be changed in order to see how districts are performing individually.
- <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/district.png" width="800">
-  
 ### Crime by District and Quarter
 
 The following graph shows the two highest crime total categories broken out by district to identify which districts are experiencing the highest amounts of crime.
 
 <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/christmas_bar.png" width="800">
 
-### Crime by Time
+### Arrest Rate by District
 
-The line graph below shows the amount of arrests made or not made by the hours in a day.
+The heatmap belows show the arrest rate for District 1. This graph is interactive and the district can be changed in order to see how districts are performing individually.
 
- <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/randy2-branch/Resources/Crime_hour.png" width="800">
-
+ <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/district.png" width="800">
+  
 ## Summary
 
  
