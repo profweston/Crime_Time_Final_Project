@@ -38,3 +38,5 @@ Connected to ML model by using SQLAlchemy connection string
 - Two tables were created from the cleaned data and merged to make the final data file used for data analysis. 
 - Used AWS to connect to our database in pgAdmin so that it was accessable by our team
 - Then we connected it to our ML model using a connection string
+
+- We used tableau to create our visualisations and presentation
