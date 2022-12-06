@@ -1,3 +1,6 @@
 .DS_Store
 config.py
 .csv
+
+clean_crime_mockup1.csv
+clean_crime_mockup2.csv
