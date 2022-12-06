@@ -25,3 +25,16 @@ pgAdmin used to create database
 Consisted of two tables from cleaned data and a third table created by an inner join
 Hosted on AWS so that all team members had access
 Connected to ML model by using SQLAlchemy connection string
+
+
+## Script
+- Pre-Process: Used pandas and jupyter notebook to clean the data and remove anything that was not useful to our analysis.
+
+- Size of dataset was massive, originally had data from 2001 to 2021 and we dropped years before 2015
+- Removed any missing data (NaN's) to make our analysis more reliable
+- Dropped columns that we didn't want to use :IUCR, Description, Beat, Community Area, FBI Code, Updated On
+
+- A database was initially created using pdAmin.
+- Two tables were created from the cleaned data and merged to make the final data file used for data analysis. 
+- Used AWS to connect to our database in pgAdmin so that it was accessable by our team
+- Then we connected it to our ML model using a connection string
