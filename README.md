@@ -30,7 +30,7 @@ Connected to ML model by using SQLAlchemy connection string
 ## Script
 - Pre-Process: Used pandas and jupyter notebook to clean the data and remove anything that was not useful to our analysis.
 
-- Size of dataset was massive, originally had data from 2001 to 2021 and we dropped years before 2015
+- Size of dataset was massive, originally had data from 2001 to 2022 and we dropped years before 2015
 - Removed any missing data (NaN's) to make our analysis more reliable
 - Dropped columns that we didn't want to use :IUCR, Description, Beat, Community Area, FBI Code, Updated On
 
