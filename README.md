@@ -144,27 +144,28 @@ The bubble chart below shows the distribution of the types of crimes committed i
 
 The bar chart below shows the proportion of arrests to nonarrests for the most frequent types of crime. Although theft is a much more common crime, the proportion of arrests is lower than some of the other crimes. Interestingly, some crimes have a high arrest rate, but on closer inspection, these offenses do not involve a crime against another person. Thus, this result in not surprising. On the other hand, crimes against others have an arrest rate that is much lower. In fact, none of the arrest rates were higher than approximately half of the crime rate. 
 
- <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/Arrests_bar.png" width="800">
+ <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/Arrest_count.png" width="800">
 
-### Arrest Rate by District
+### Crime by Time
 
-The heatmap belows show the arrest rate for District 1. This graph is interactive and the district can be changed in order to see how districts are performing individually in terms of arrest rates.
+The line graph below shows the amount of arrests made or not made by the hours in a day.
 
- <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/district.png" width="800">
-  
+ <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/randy2-branch/Resources/Crime_hour.png" width="800">
+
+
 ### Crime by District and Quarter
 
 The following bar graph shows the two highest crime total categories broken out by district to identify which districts are experiencing the highest amounts of crime. It can be filtered by quarter and by district.
 
 
-<img src="https://github.com/profweston/Crime_Time_Final_Project/blob/randy2-branch/Resources/Crime_qd.png" width="800">
+<img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/christmas_bar.png" width="800">
 
-### Crime by Time
+### Arrest Rate by District
 
-The line graph below shows the amount of arrests made or not made by the hours in a day. There is much more variation among time of day when examining the nonarrests trend. This is most likely due to a much larger proportion of nonarrests made. The more common time for arrests to be made tends to be in the evening hours but once midnight comes, the arrests rate drops. 
+The heatmap belows show the arrest rate for District 1. This graph is interactive and the district can be changed in order to see how districts are performing individually.
 
- <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/randy2-branch/Resources/Crime_hour.png" width="800">
-
+ <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/district.png" width="800">
+  
 ## Summary
 
 Crime is inherently a social issue and the complexity of its nature being interwoven in economic recessions and cultural constructs makes it a concept that is uncertain. That being said, crime data analysis can be used to provide important insights into crime prevention. In this analysis, we applied a Random Forest Classifier to attempt to predict whether an arrest is made based on type of crime and time and location with 87.5% accuracy. Our F-1 score indicated a fairly high balance beween recall and precision. Thus our model was relatively successful.
