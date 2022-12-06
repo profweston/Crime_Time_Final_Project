@@ -21,3 +21,7 @@ Machine Learning: We chose a supervised learning model because we are attempting
 3B.binned the time columns into hours to break the days up and show if certain hours are more likely to have a certain crime occur
 4B.binned the date columns into months to break the year up and show if certain quarters are more likely to have a certain crime occur
 
+pgAdmin used to create database
+Consisted of two tables from cleaned data and a third table created by an inner join
+Hosted on AWS so that all team members had access
+Connected to ML model by using SQLAlchemy connection string
