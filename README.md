@@ -30,7 +30,7 @@ Connected to ML model by using SQLAlchemy connection string
 ## Script
 - Pre-Process: Used pandas and jupyter notebook to clean the data and remove anything that was not useful to our analysis.
 
-- Size of dataset was massive, originally had data from 2001 to 2022 and we dropped years before 2015
+- Size of dataset was massive, originally had data from 2001 to 2022 and we dropped years before 2015, this left us with still over 1 MILLION rows of data to test for our analysis
 - Removed any missing data (NaN's) to make our analysis more reliable
 - Dropped columns that we didn't want to use :IUCR, Description, Beat, Community Area, FBI Code, Updated On
 
@@ -40,3 +40,4 @@ Connected to ML model by using SQLAlchemy connection string
 - Then we connected it to our ML model using a connection string
 
 - We used tableau to create our visualisations and presentation
+- Now I'll turn it over to Andres to talk about his work with the ML model
