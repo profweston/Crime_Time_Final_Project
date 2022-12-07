@@ -153,10 +153,9 @@ The line graph below shows the amount of arrests made or not made by the hours i
  <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/randy2-branch/Resources/Crime_hour.png" width="800">
 
 
-### Crime by District and Quarter
+### Crime by District
 
-The following bar graph shows the two highest crime total categories broken out by district to identify which districts are experiencing the highest amounts of crime. It can be filtered by quarter and by district.
-
+To get a little more granular, this graph shows how the district ranks based on the type of crime committed in each district.  District 1 and 18, reported the two highest amount of thefts out of all the districts in chicago.  
 
 <img src="https://github.com/profweston/Crime_Time_Final_Project/blob/main/Resources/christmas_bar.png" width="800">
 
